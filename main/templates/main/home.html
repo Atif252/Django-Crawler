@@ -1,0 +1,19 @@
+
+
+
+
+{% load static %}
+
+{% block content %}
+
+<div class="col container">
+	<form method="post" id="url_form">{% csrf_token %}
+	  <input type="url" name="url" id="inputUrl" class="form-control" placeholder="Enter URL" required autofocus>
+
+
+	  <button class="login-button text-center" form="url_form" type="submit">SUMBIT</button>
+
+	</form>
+</div>
+
+{% endblock %}
